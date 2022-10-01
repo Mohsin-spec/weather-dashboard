@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+         crossorigin="anonymous" />
+
+    <!-- Bootstrap CORE CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <main id="wrapper" class="container bg-light">
+        <!-- Dashboard Header -->
+        <header id="title" class="row card text-white bg-info mb-3">
+            <h1>Weather Dashboard</h1>
+        </header>
+
+        <div class="row">
+            <!-- Navigation Sidebar -->
+            <nav class="col-md-3 d-none d-md-block bg-light sidebar">
+                <div>
+                    <h5>Search for a City:</h5>
+                    <form class="form-inline input-group mb-3">
+                        <input id="city-search" class="form-control mr-sm-2" type="search" placeholder="City"
+                            aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="query-btn btn btn-info my-2 my-sm-0" type="button" id="button-addon2"
+                                data-id="0"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                    <br>
+                    <h6>Search History:</h6>
+                    <div class="card">
+                        <div id="search-history" class="btn-group btn-group-vertical">
+                        </div>
+                        <button id="clear-search" class="btn btn-info" type="button">Clear All</button>
+                    </div>
+                    <br>
+                    <h5>Popular Destinations:</h5>
+                    <div class="card">
+                        <div class="btn-group btn-group-vertical">
+                            <button class="btn query-btn" type="button" data-id="1">New York</button>
+                            <button class="btn query-btn" type="button" data-id="2">San Francisco</button>
+                            <button class="btn query-btn" type="button" data-id="3">Los Angeles</button>
+                            <button class="btn query-btn" type="button" data-id="4">Las Vegas</button>
+                            <button class="btn query-btn" type="button" data-id="5">Washington D.C.</button>
+                            <button class="btn query-btn" type="button" data-id="6">Miami</button>
+                            <button class="btn query-btn" type="button" data-id="7">Chicago</button>
+                            <button class="btn query-btn" type="button" data-id="8">San Diego</button>
+                            <button class="btn query-btn" type="button" data-id="9">Seattle</button>
+                            <button class="btn query-btn" type="button" data-id="10">Boston</button>
+
+                            </duv>
+                        </div>
+
+                    </div>
+            </nav>
+
+
+            <!-- Main Weather Display & Forecast -->
+            <main class="col-md-9 card">
+                <div class="row card">
+                    <div class="row card-body">
+                        <h3 class="card-title"><span id="city">Search Weather for your Destination</span><span
+                                id="todays-date">&nbsp;</span>
+                        </h3>
+                        <img id="weather_image" src="">
+                    </div>
+                    <div class="row card-body">
+                        <h5 class="card-text">Description: <span id="description"></span></h5>
+                    </div>
+                    <div class="row card-body">
+                        <h5 class="card-text">Temperature: <span id="temperature"></span></h5>
+                    </div>
+                    <div class="row card-body">
+                        <h5 class="card-text">Humidity: <span id="humidity"></span></h5>
+                    </div>
+                    <div class="row card-body">
+                        <h5 class="card-text">Wind Speed: <span id="wind-speed"></span></h5>
+                    </div>
+                    <div class="row card-body">
+                        <h5 class="card-text">UV Index: <span id="uv-index"></span></h5>
+                    </div>
+                </div>
+                
+                <!-- 5 Day Forecast -->
+                    <div class="row card"></div>
+                    <div class="row card-body">
+                        <h3 class="card-title">5 Day Forecast</h3>
+                    </div>
+                    <div id="five-day" class="row card-body text-center"></div>
+                </div>
+            </main>
+        </div>
+
+    </main>
+
+    <!-- Bootstrap CORE JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+    <script src="assets/window.js"></script>
+</body>
+
+</html>
