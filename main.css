@@ -1,0 +1,21 @@
+body{
+background-color : rebeccapurple;
+
+
+display :flex;
+justify-content: center;
+align-items: center;
+}
+
+button{
+    border: 0;
+    border-radius: 8px;
+    background-color: aqua;
+    color: azure;
+}
+
+
+
+h1{
+    color: black;
+}
